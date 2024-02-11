@@ -1,0 +1,56 @@
+A)
+cd Documents
+Creating files and directories:
+touch 20301121_1.txt
+touch 20301121_2.txt
+touch 20301121_3.txt
+mkdir SaifMokarrom1
+mkdir SaifMokarrom2
+
+move:
+mv 20301121_1.txt 20301121_2.txt 20301121_3.txt SaifMokarrom1
+
+copy:
+cp SaifMokarrom1/20301121_1.txt SaifMokarrom1/20301121_2.txt SaifMokarrom2
+
+
+new directory:
+mkdir SaifMokarrom3
+
+
+copy one directory to other:
+cp -r  SaifMokarrom1 SaifMokarrom3
+
+
+cd SaifMokarrom3
+ls -l
+
+chmod -R go=rx *
+ls -l
+
+cd ..
+sudo mv SaifMokarrom3 /
+
+rm -r *
+
+
+
+
+
+B)
+cat > This_semester_info.txt
+CSE321
+CSE470
+CSE425
+CSE437
+CSE400
+grep -c "CSE" This_semester_info.txt
+
+
+C) 
+cd ~
+ls -a
+
+
+D)
+sed -n '5,17p' a.txt
